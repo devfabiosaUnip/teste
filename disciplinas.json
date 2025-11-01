@@ -1,0 +1,43 @@
+[
+  {
+    "codigo": "ES001",
+    "nome": "Introdução à Programação",
+    "carga_horaria": 60,
+    "creditos": 4,
+    "departamento": "Engenharia de Software",
+    "descricao": "Fundamentos de lógica de programação e algoritmos."
+  },
+  {
+    "codigo": "CC002",
+    "nome": "Estruturas de Dados",
+    "carga_horaria": 60,
+    "creditos": 4,
+    "departamento": "Ciência da Computação",
+    "descricao": "Estudo e implementação de estruturas de dados clássicas."
+  },
+  {
+    "codigo": "SI003",
+    "nome": "Banco de Dados I",
+    "carga_horaria": 60,
+    "creditos": 4,
+    "departamento": "Sistemas de Informação",
+    "descricao": "Conceitos e modelagem de sistemas de bancos de dados relacionais."
+  },
+  {
+    "codigo": "ES004",
+    "nome": "Desenvolvimento Web",
+    "carga_horaria": 80,
+    "creditos": 5,
+    "departamento": "Engenharia de Software",
+    "descricao": "Introdução às tecnologias e frameworks de desenvolvimento web."
+  },
+  {
+    "codigo": "CC005",
+    "nome": "Algoritmos Avançados",
+    "carga_horaria": 80,
+    "creditos": 5,
+    "departamento": "Ciência da Computação",
+    "descricao": "Análise de complexidade e projeto de algoritmos eficientes."
+  }
+]
+

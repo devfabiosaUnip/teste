@@ -1,0 +1,38 @@
+[
+  {
+    "matricula": "2023001",
+    "nome": "João Silva",
+    "curso": "Engenharia de Software",
+    "status": "ativo",
+    "email": "joao.silva@universidade.com"
+  },
+  {
+    "matricula": "2023002",
+    "nome": "Maria Souza",
+    "curso": "Ciência da Computação",
+    "status": "ativo",
+    "email": "maria.souza@universidade.com"
+  },
+  {
+    "matricula": "2023003",
+    "nome": "Pedro Santos",
+    "curso": "Engenharia de Software",
+    "status": "inativo",
+    "email": "pedro.santos@universidade.com"
+  },
+  {
+    "matricula": "2023004",
+    "nome": "Ana Oliveira",
+    "curso": "Sistemas de Informação",
+    "status": "ativo",
+    "email": "ana.oliveira@universidade.com"
+  },
+  {
+    "matricula": "2023005",
+    "nome": "Carlos Pereira",
+    "curso": "Ciência da Computação",
+    "status": "ativo",
+    "email": "carlos.pereira@universidade.com"
+  }
+]
+

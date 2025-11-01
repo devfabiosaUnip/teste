@@ -1,0 +1,39 @@
+[
+  {
+    "turm-id": "T2023_ES001_A",
+    "disciplina_codigo": "ES001",
+    "ano_semestre": "2023.1",
+    "alunos_notas": [
+      {"matricula": "2023001", "nota": 8.5, "faltas": 2},
+      {"matricula": "2023003", "nota": 6.0, "faltas": 5}
+    ]
+  },
+  {
+    "turm-id": "T2023_CC002_B",
+    "disciplina_codigo": "CC002",
+    "ano_semestre": "2023.1",
+    "alunos_notas": [
+      {"matricula": "2023002", "nota": 9.2, "faltas": 0},
+      {"matricula": "2023005", "nota": 7.8, "faltas": 1}
+    ]
+  },
+  {
+    "turm-id": "T2023_ES001_A",
+    "disciplina_codigo": "ES001",
+    "ano_semestre": "2023.2",
+    "alunos_notas": [
+      {"matricula": "2023001", "nota": 7.0, "faltas": 3},
+      {"matricula": "2023004", "nota": 9.0, "faltas": 1}
+    ]
+  },
+  {
+    "turm-id": "T2023_SI003_C",
+    "disciplina_codigo": "SI003",
+    "ano_semestre": "2023.2",
+    "alunos_notas": [
+      {"matricula": "2023004", "nota": 8.0, "faltas": 0},
+      {"matricula": "2023002", "nota": 7.5, "faltas": 2}
+    ]
+  }
+]
+

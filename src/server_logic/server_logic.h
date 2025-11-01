@@ -1,0 +1,72 @@
+#ifndef SERVER_LOGIC_H
+#define SERVER_LOGIC_H
+
+#include "models.h" // Para User e UserRole
+#include "protocol.h" // Para ClientMessage, ServerResponse, CommandType e macros de tamanho
+#include "admin/admin.h" // Para as declarações das funções de administração
+#include "professor/professor.h" // Para as declarações das funções do professor
+
+// Variável global para todos os dados do sistema (declarada em storage.c)
+extern SystemData global_data;
+
+User* authenticate_user(const char* email, const char* password, UserRole* role);
+ServerResponse process_client_command(ClientMessage client_msg);
+
+// Prototipos das funcoes de manipulacao de comandos
+ServerResponse handle_login_command(ClientMessage client_msg);
+ServerResponse handle_admin_add_professor_command(ClientMessage client_msg);
+ServerResponse handle_admin_edit_professor_command(ClientMessage client_msg);
+ServerResponse handle_admin_list_professors_command();
+ServerResponse handle_admin_remove_professor_command(ClientMessage client_msg);
+ServerResponse handle_admin_add_class_command(ClientMessage client_msg);
+ServerResponse handle_admin_list_classes_command();
+ServerResponse handle_admin_edit_class_command(ClientMessage client_msg);
+ServerResponse handle_admin_remove_class_command(ClientMessage client_msg);
+// Comandos de Administrador - Alunos
+ServerResponse handle_admin_add_student_command(ClientMessage client_msg);
+ServerResponse handle_admin_list_students_command();
+ServerResponse handle_admin_edit_student_command(ClientMessage client_msg);
+ServerResponse handle_admin_remove_student_command(ClientMessage client_msg);
+// Comandos de Administrador - Gerenciamento de Matérias/Turmas
+ServerResponse handle_admin_assign_subject_command(ClientMessage client_msg);
+ServerResponse handle_admin_unassign_subject_command(ClientMessage client_msg);
+ServerResponse handle_admin_assign_class_command(ClientMessage client_msg);
+ServerResponse handle_admin_unassign_class_command(ClientMessage client_msg);
+ServerResponse handle_admin_assign_subject_to_professor_command(ClientMessage client_msg);
+ServerResponse handle_admin_unassign_subject_from_professor_command(ClientMessage client_msg);
+ServerResponse handle_admin_assign_class_to_professor_command(ClientMessage client_msg);
+ServerResponse handle_admin_unassign_class_from_professor_command(ClientMessage client_msg);
+ServerResponse handle_professor_list_assigned_classes_command(ClientMessage client_msg);
+ServerResponse handle_professor_list_assigned_subjects_command(ClientMessage client_msg);
+ServerResponse handle_professor_post_grade_command(ClientMessage client_msg);
+ServerResponse handle_professor_register_absence_command(ClientMessage client_msg);
+ServerResponse handle_professor_view_grades_absences_command(ClientMessage client_msg);
+ServerResponse handle_professor_create_subject_module_command(ClientMessage client_msg);
+ServerResponse handle_professor_list_subject_modules_command(ClientMessage client_msg);
+ServerResponse handle_professor_edit_module_command(ClientMessage client_msg);
+ServerResponse handle_professor_remove_module_command(ClientMessage client_msg);
+ServerResponse handle_professor_add_lesson_to_module_command(ClientMessage client_msg);
+ServerResponse handle_professor_edit_lesson_command(ClientMessage client_msg);
+ServerResponse handle_professor_remove_lesson_command(ClientMessage client_msg);
+ServerResponse handle_professor_list_module_lessons_command(ClientMessage client_msg);
+ServerResponse handle_professor_create_module_quiz_command(ClientMessage client_msg);
+ServerResponse handle_professor_edit_quiz_command(ClientMessage client_msg);
+ServerResponse handle_professor_remove_quiz_command(ClientMessage client_msg);
+ServerResponse handle_professor_add_question_to_quiz_command(ClientMessage client_msg);
+ServerResponse handle_professor_edit_question_command(ClientMessage client_msg);
+ServerResponse handle_professor_remove_question_command(ClientMessage client_msg);
+ServerResponse handle_professor_list_module_quizzes_command(ClientMessage client_msg);
+
+// Prototipos das funcoes de manipulacao de comandos de Aluno
+ServerResponse handle_student_enroll_subject_command(ClientMessage client_msg);
+ServerResponse handle_student_unenroll_subject_command(ClientMessage client_msg);
+ServerResponse handle_student_list_enrolled_subjects_command(ClientMessage client_msg);
+ServerResponse handle_student_list_modules_in_subject_command(ClientMessage client_msg);
+ServerResponse handle_student_view_lessons_in_module_command(ClientMessage client_msg);
+ServerResponse handle_student_view_quizzes_in_module_command(ClientMessage client_msg);
+ServerResponse handle_student_take_quiz_command(ClientMessage client_msg);
+ServerResponse handle_student_request_quiz_questions_command(ClientMessage client_msg);
+ServerResponse handle_student_view_grades_command(ClientMessage client_msg);
+ServerResponse handle_student_view_absences_command(ClientMessage client_msg);
+
+#endif // SERVER_LOGIC_H
